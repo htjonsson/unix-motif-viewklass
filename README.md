@@ -30,3 +30,8 @@ https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/UserInterface/08_File/File.htmld/index.html <br/>
 https://github.com/gnustep/apps-gorm/tree/master <br/>
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleApp/SimpleApp.htmld/index.html <br/>
+
+# OPENGL
+https://www-f9.ijs.si/~matevz/docs/007-2392-003/sgi_html/ch02.html
+https://techpubs.jurassic.nl/library/manuals/1000/007-1797-030/sgi_html/ape.html#id87693
+https://github.com/aosm/X11/blob/master/xc/extras/ogl-sample/main/gfx/lib/glw/GLwDrawA.c

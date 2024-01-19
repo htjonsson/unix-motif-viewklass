@@ -1,1 +1,32 @@
-# unix-motif-viewklass
+# X11
+https://stackoverflow.com/questions/30407836/x11-how-do-i-get-the-font-i-want <br/>
+https://gitlab.freedesktop.org/xorg/app/xlsfonts/-/blob/master/xlsfonts.c?ref_type=heads <br/>
+https://www.oreilly.com/library/view/x-window-system/9780937175149/Chapter05.html <br/>
+https://gitlab.freedesktop.org/xorg/app/xfontsel/-/blob/master/xfontsel.c?ref_type=heads <br/>
+https://ftp.cs.wisc.edu/math-prog/surgery/interface.c <br/>
+https://www.x.org/releases/current/doc/libX11/libX11/libX11.html <br/>
+https://tronche.com/gui/x/xlib/events/processing-overview.html#KeyPressMask <br/>
+
+# MOTIF
+
+https://man.archlinux.org/man/extra/openmotif/XmForm.3.en
+http://www.vaxination.ca/motif/TOC.html <br/>
+https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
+https://help.perforce.com/visualization/views/6.3/views.html#page/UserManuals/appendixC_xwindow.19.15.html <br/> 
+https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch21.html <br/>
+https://users.cs.cf.ac.uk/dave/X_lecture/ <br/>
+https://blog.pizzabox.computer/posts/booting-the-indy/ <br/>
+https://docs.oracle.com/cd/E19205-01/819-3700/index.html <br/>
+https://help.perforce.com/visualization/views/6.3/views.html#page/UserManuals%2FappendixC_xwindow.19.13.html%23 <br/>
+https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
+https://gainos.org/~elf/sgi/nekonomicon/forum/8/16730318/1.html <br/>
+https://techpubs.jurassic.nl/manuals/0620/enduser/Utilities/sgi_html/ch02.html <br/>
+http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/index.html <br/>
+
+# VIEWKLASS
+https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass
+
+# NEXT
+http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/UserInterface/08_File/File.htmld/index.html <br/>
+https://github.com/gnustep/apps-gorm/tree/master <br/>
+http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleApp/SimpleApp.htmld/index.html <br/>

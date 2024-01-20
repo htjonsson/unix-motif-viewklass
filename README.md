@@ -1,3 +1,7 @@
+# C++
+https://cplusplus.com/reference/
+https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp
+
 # X11
 https://stackoverflow.com/questions/30407836/x11-how-do-i-get-the-font-i-want <br/>
 https://gitlab.freedesktop.org/xorg/app/xlsfonts/-/blob/master/xlsfonts.c?ref_type=heads <br/>

@@ -29,7 +29,8 @@ https://techpubs.jurassic.nl/manuals/0620/enduser/Utilities/sgi_html/ch02.html <
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/index.html <br/>
 
 # VIEWKLASS
-https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass
+https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass <br/>
+https://nixdoc.net/man-pages/IRIX/man3/VkSimpleWindow.3.html <br/>
 
 # NEXT
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/UserInterface/08_File/File.htmld/index.html <br/>

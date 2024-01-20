@@ -12,10 +12,12 @@ https://www.x.org/releases/current/doc/libX11/libX11/libX11.html <br/>
 https://tronche.com/gui/x/xlib/events/processing-overview.html#KeyPressMask <br/>
 
 # MOTIF
+https://www.ist.co.uk/motif/books/vol6A/BookTOC.fm.html <br/>
 https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch07.html#8 <br/>
 https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
 https://man.archlinux.org/man/extra/openmotif/XmForm.3.en <br/>
 http://www.vaxination.ca/motif/TOC.html <br/>
+https://tronche.com/gui/x/xlib/color/XAllocNamedColor.html <br/>
 https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
 https://help.perforce.com/visualization/views/6.3/views.html#page/UserManuals/appendixC_xwindow.19.15.html <br/> 
 https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch21.html <br/>
@@ -27,6 +29,7 @@ https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/m
 https://gainos.org/~elf/sgi/nekonomicon/forum/8/16730318/1.html <br/>
 https://techpubs.jurassic.nl/manuals/0620/enduser/Utilities/sgi_html/ch02.html <br/>
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/index.html <br/>
+https://www.linux.org.ru/gallery/screenshots/114826
 
 # VIEWKLASS
 https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass <br/>

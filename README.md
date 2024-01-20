@@ -13,6 +13,7 @@ https://tronche.com/gui/x/xlib/events/processing-overview.html#KeyPressMask <br/
 
 # MOTIF
 https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch07.html#8 <br/>
+https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
 https://man.archlinux.org/man/extra/openmotif/XmForm.3.en <br/>
 http://www.vaxination.ca/motif/TOC.html <br/>
 https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>

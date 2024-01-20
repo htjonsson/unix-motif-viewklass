@@ -1,6 +1,6 @@
 # C++
-https://cplusplus.com/reference/
-https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp
+https://cplusplus.com/reference/ <br/>
+https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp <br/>
 
 # X11
 https://stackoverflow.com/questions/30407836/x11-how-do-i-get-the-font-i-want <br/>

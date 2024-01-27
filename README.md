@@ -31,6 +31,11 @@ https://techpubs.jurassic.nl/manuals/0620/enduser/Utilities/sgi_html/ch02.html <
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/index.html <br/>
 https://www.linux.org.ru/gallery/screenshots/114826
 
+# SGI
+http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/ch14.html#id13837 <br/>
+http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/index.html <br/>
+https://web.archive.org/web/20160128065726/http://techpubs.sgi.com/library/tpl/cgi-bin/getdoc.cgi/0530/bks/SGI_Developer/books/BuilderUG/sgi_html/ch07.html#id32362 <br/>
+
 # VIEWKLASS
 https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass <br/>
 https://nixdoc.net/man-pages/IRIX/man3/VkSimpleWindow.3.html <br/>
@@ -41,6 +46,9 @@ https://github.com/gnustep/apps-gorm/tree/master <br/>
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleApp/SimpleApp.htmld/index.html <br/>
 
 # OPENGL
-https://www-f9.ijs.si/~matevz/docs/007-2392-003/sgi_html/ch02.html
-https://techpubs.jurassic.nl/library/manuals/1000/007-1797-030/sgi_html/ape.html#id87693
-https://github.com/aosm/X11/blob/master/xc/extras/ogl-sample/main/gfx/lib/glw/GLwDrawA.c
+https://www-f9.ijs.si/~matevz/docs/007-2392-003/sgi_html/ch02.html <br/>
+https://techpubs.jurassic.nl/library/manuals/1000/007-1797-030/sgi_html/ape.html#id87693 <br/>
+https://github.com/aosm/X11/blob/master/xc/extras/ogl-sample/main/gfx/lib/glw/GLwDrawA.c <br/>
+
+#Visual Tcl
+https://vtcl.sourceforge.net/?x=screen <br/>

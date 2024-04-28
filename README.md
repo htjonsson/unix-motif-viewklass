@@ -34,6 +34,8 @@ https://techpubs.jurassic.nl/manuals/0620/enduser/Utilities/sgi_html/ch02.html <
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/index.html <br/>
 https://www.linux.org.ru/gallery/screenshots/114826  <br/>
 https://www.dcs.ed.ac.uk/home/SUNWspro/3.0/visual/user_guide/index.html <br/>
+http://www.vaxination.ca/motif/XmBulletinB_3X.html#XmNnoResize <br/>
+https://motif.ics.com/sites/default/files/UserGuide.pdf <br/>
 
 # SGI
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/ch14.html#id13837 <br/>
@@ -53,6 +55,10 @@ http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleAp
 https://www-f9.ijs.si/~matevz/docs/007-2392-003/sgi_html/ch02.html <br/>
 https://techpubs.jurassic.nl/library/manuals/1000/007-1797-030/sgi_html/ape.html#id87693 <br/>
 https://github.com/aosm/X11/blob/master/xc/extras/ogl-sample/main/gfx/lib/glw/GLwDrawA.c <br/>
+
+# VISUALAGE
+http://www.edm2.com/images/7/71/VAC4-vb_notebook.gif <br/>
+http://www.edm2.com/index.php/File:Ibm-icsvb.png <br/>
 
 #Visual Tcl
 https://vtcl.sourceforge.net/?x=screen <br/>

@@ -4,6 +4,7 @@ https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp <br/>
 https://github.com/nlohmann/json?tab=readme-ov-file#read-json-from-a-file <br/>
 
 # X11
+https://www.keithp.com/~keithp/render/Xft.tutorial <br/> 
 https://user.it.uu.se/~bonordin/Graphics/MotifWidgetReference.html <br/>
 https://stackoverflow.com/questions/30407836/x11-how-do-i-get-the-font-i-want <br/>
 https://gitlab.freedesktop.org/xorg/app/xlsfonts/-/blob/master/xlsfonts.c?ref_type=heads <br/>

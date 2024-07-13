@@ -38,6 +38,8 @@ https://www.dcs.ed.ac.uk/home/SUNWspro/3.0/visual/user_guide/index.html <br/>
 http://www.vaxination.ca/motif/XmBulletinB_3X.html#XmNnoResize <br/>
 https://motif.ics.com/sites/default/files/UserGuide.pdf <br/>
 https://github.com/XEphem/XEphem/tree/main <br/>
+https://easymotif.sourceforge.net/EasyMotif.html <br/>
+http://www.motifdeveloper.com/tips/tip2.html#xtocid114825 <br/>
 
 # SGI
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/ch14.html#id13837 <br/>
@@ -62,5 +64,8 @@ https://github.com/aosm/X11/blob/master/xc/extras/ogl-sample/main/gfx/lib/glw/GL
 http://www.edm2.com/images/7/71/VAC4-vb_notebook.gif <br/>
 http://www.edm2.com/index.php/File:Ibm-icsvb.png <br/>
 
-#Visual Tcl
+# Visual Tcl
 https://vtcl.sourceforge.net/?x=screen <br/>
+
+# Java
+http://www.geocities.ws/james_smith73/swing1.html

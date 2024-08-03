@@ -45,6 +45,9 @@ http://www.motifdeveloper.com/tips/tip2.html#xtocid114825 <br/>
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/ch14.html#id13837 <br/>
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/index.html <br/>
 https://web.archive.org/web/20160128065726/http://techpubs.sgi.com/library/tpl/cgi-bin/getdoc.cgi/0530/bks/SGI_Developer/books/BuilderUG/sgi_html/ch07.html#id32362 <br/>
+https://help.graphica.com.au/irix-6.5.30/man/3X/SgGraph <br/>
+https://help.graphica.com.au/irix-6.5.30/man/3X/SgArc <br/>
+https://techpubs.jurassic.nl/library/manuals/2000/007-2006-130/sgi_html/apa.html#LE74701-PARENT <br/>
 
 # VIEWKLASS
 https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass <br/>

@@ -62,6 +62,7 @@ http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleAp
 https://www-f9.ijs.si/~matevz/docs/007-2392-003/sgi_html/ch02.html <br/>
 https://techpubs.jurassic.nl/library/manuals/1000/007-1797-030/sgi_html/ape.html#id87693 <br/>
 https://github.com/aosm/X11/blob/master/xc/extras/ogl-sample/main/gfx/lib/glw/GLwDrawA.c <br/>
+https://www.infania.net/misc1/sgi_techpubs/techpubs/007-2392-003.pdf <br/>
 
 # VISUALAGE
 http://www.edm2.com/images/7/71/VAC4-vb_notebook.gif <br/>

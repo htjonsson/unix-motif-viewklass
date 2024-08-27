@@ -1,7 +1,10 @@
 # C++
 https://cplusplus.com/reference/ <br/>
 https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp <br/>
+
+# JSON
 https://github.com/nlohmann/json?tab=readme-ov-file#read-json-from-a-file <br/>
+https://app.quicktype.io/ <br/>
 
 # X11
 https://www.keithp.com/~keithp/render/Xft.tutorial <br/> 

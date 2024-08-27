@@ -57,6 +57,10 @@ https://techpubs.jurassic.nl/library/manuals/2000/007-2006-130/sgi_html/apa.html
 https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass <br/>
 https://nixdoc.net/man-pages/IRIX/man3/VkSimpleWindow.3.html <br/>
 
+# IMAGE LIBRARY
+https://web.mit.edu/graphics/src/imlib-1.7/doc/ <br/>
+https://docs.enlightenment.org/api/imlib2/html/ <br/>
+
 # NEXT
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/UserInterface/08_File/File.htmld/index.html <br/>
 https://github.com/gnustep/apps-gorm/tree/master <br/>

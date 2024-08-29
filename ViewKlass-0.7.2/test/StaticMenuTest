@@ -1,0 +1,26 @@
+! Check for matching resources to the current version
+StaticMenuTest*versionCheck : 70
+
+! Debugging settings
+*traceApplication : False
+*debugResources : True
+*dumpWidgetTree : False
+*helpAuthorMode : true
+
+! Basic Fonts
+*fontList : -*-lucida-medium-r-*-*-*-140-*-*-*-*-*-*
+*menuBar*fontList : -*-lucida-medium-i-*-*-*-140-*-*-*-*-*-*
+*XmLabel*fontList : -*-lucida-bold-r-*-*-*-140-*-*-*-*-*-*
+*XmLabelGadget*fontList : -*-lucida-bold-r-*-*-*-140-*-*-*-*-*-*
+
+*shadowThickness : 1
+*XmSeparator.shadowThickness : 2
+*XmSeparatorGadget.shadowThickness : 2
+
+*highlightThickness : 1
+
+*background : #bbddcc
+
+*titleResource : The Window Title Set From A Resource
+*iconNameResource : MenuTest Icon
+*waitMessage : Just hold on there.

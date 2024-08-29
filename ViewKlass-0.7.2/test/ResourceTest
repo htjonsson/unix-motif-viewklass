@@ -1,0 +1,15 @@
+! Check for matching resources to the current version
+StaticMenuTest*versionCheck : 70
+
+! Debugging settings
+*traceApplication : False
+*debugResources : True
+*dumpWidgetTree : False
+*helpAuthorMode : true
+
+*fontList : -*-utopia-*-r-*-*-*-120-*-*-*-*-*-*
+*menuBar*fontList : -*-utopia-bold-i-*-*-*-120-*-*-*-*-*-*
+*helpAuthorMode: True
+*Help : Help Dialog
+*resourceTitle: The Title
+*Title: Title

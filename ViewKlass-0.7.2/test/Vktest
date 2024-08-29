@@ -1,0 +1,150 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! Resources for the main ViewKlass test harness 
+!!
+
+Vktest*versionCheck : 70
+
+! Debugging settings
+*traceApplication : False
+*debugResources : True
+*dumpWidgetTree : False
+
+! Basic Fonts
+Vktest*fontList : -*-helvetica-medium-r-*-*-*-120-*-*-*-*-*-*
+Vktest*menuBar*fontList : -*-helvetica-bold-o-*-*-*-120-*-*-*-*-*-*
+
+! Basic colours
+Vktest*background : #aabbcc
+Vktest*XmText.background : #ffeedd
+Vktest*XmTextField.background : #ffeedd
+Vktest*XmList.background : #ddeeff
+
+! Initial list contents
+Vktest*TheList.itemCount : 3
+Vktest*TheList.items : one,two,three
+
+! Slider component settings
+*initialDelay : 300
+*repeatDelay : 100
+
+! Various strings
+*titleResource : The Window Title Set From A Resource
+*iconNameResource : VkTest Icon
+*waitMessage : Just hold on there.
+*selectMe : Choose One Please.
+*promptMessage : The Prompt Dialog
+*Message : Star Message String
+*progressing : Progress Dialog
+*testPrefDialog*applyLabelString : Update
+*Yeah: Yes
+*Nope: No
+*aPreferenceDialog : Pref Dialog\n(set from resource)
+*Quit.noUndoQuestion : Really Quit?
+*Undo.labelString : Backout
+*vkAppNameL10NString : Welcome to :
+*testPeriodic*cancelLabelString : Stop
+*testPeriodic*helpLabelString : What?
+
+! VkSelectionDialog test
+*SelectionDialogManager*ItemsList.itemCount : 2
+*SelectionDialogManager*ItemsList.items : 1 Resource Set Item,2 Resource Set Items
+
+! Help system settings
+*helpAuthorMode : True
+
+! The Help index text, topics and labels
+*index.helpText : Choose a topic.
+*helpIndex.applyLabelString : Display
+*helpIndex.cancelLabelString : Close
+*helpIndex*XmList.itemCount : 6
+! The index topic display strings
+*helpIndex*ItemsList.items : \
+Topic 1,Topic 2,Topic 3,Topic 4,Application Menu,Slider Component
+! The index topic resource names (needs to match the displayed strings)
+! Note also the re-use of the Click for Help defined for
+! the Application menu and Slider component.
+*index.indexKeys : \
+topic1,topic2,topic3,topic4,VkTestHarness*menuBar.application,slider1
+! The help text for each topic resource
+*topic1.helpText : \
+This is the help for the First help topic.
+*topic2.helpText : \
+Here is some help for the Second help topic.
+*topic3.helpText : \
+The Third help topic is\n\
+really easy to explain.
+*topic4.helpText : \
+As for the Fourth help topic, well,\n\
+it's like this you see.\n\
+Four topics is way too many for a test\n\
+so I'll just leave you to figure it out\n\
+for yourselves.
+
+! The Keys & shortcuts help text
+*keys.helpText : \
+Keyboard Shortcuts ...\n\
+'Shift-F1' - invokes Click for Help mode.
+
+! The overview help text
+*VkTestHarness*overview.helpText : \
+This is the ViewKlass Test Harness.
+
+! Help text for Help button on the VkPeriodic test dialog
+*periodicHelpStr.helpText : \
+This VkProgressDialog is being updated\n\
+by a VkPeriodic object
+
+! The Click for Help text for the Application menu
+*VkTestHarness*menuBar.application.helpText : \
+The Application Menu\n\
+VkPeriodic :\n\
+   Creates a VkPeriodic object which is used to\n\
+   update a VkProgressDialog.\n\
+VkInput :\n\
+   Creates a VkInput object when first selected.\n\
+   Attaches the VkInput object to JuNkFiLe.txt\n\
+   and outputs any new input to stdout before\n\
+   removing the attachment.\n\
+   Use 'cat someFile >> JuNkFiLe.txt' to test.\n\
+VkWindow :\n\
+   Creates and opens a minimal VkWindow.\n\
+Quit :\n\
+   Uses a VkMenuConfirmFirstAction object to prompt\n\
+   for confirmation before exiting.
+
+! The Click for Help text for the Slider component
+*slider1*helpText : \
+The Slider Component\n\
+This is a sample of a user created Component derived\n\
+from VkComponent. It includes a Label, a Scale widget,\n\
+a couple of VkRepeatButtons (which are themselves components)\n\
+and a text field. All the behaviour and interaction between\n\
+the widgets is encapsulated in this Slider component.
+
+! Help text for the VkRadioGroup in the test VkWindow
+*aTestWindow.form.radioForm*helpText: \
+These Radio buttons are members of a VkRadioGroup\n\
+which controls their radio behaviour.
+
+! Help text for the two VkPixmaps
+*vklogo.helpText : \
+The pixmap for this label was created\n\
+from an in-memory XPM pixmap. It should be\n\
+rendered using the widget's own foreground,\n\
+background, topShadow and bottomShadow colours.
+*jostlelogo.helpText : \
+The pixmap for this label was created\n\
+from an XPM pixmap file. It should be\n\
+rendered using the widget's own foreground,\n\
+background, topShadow and bottomShadow colours.\n\
+It also shows the use of resources to set other\n\
+symbolic colours in the pixmap.
+
+! Test VkPixmap colour setting
+*ExtraHighlight : green
+*vklogo*ExtraHighlight : white
+*jostlelogo.ExtraHighlight : #aabbcc
+*jostlelogo.HorizLine : #d00000
+*jostlelogo.VertLine : #00d000
+

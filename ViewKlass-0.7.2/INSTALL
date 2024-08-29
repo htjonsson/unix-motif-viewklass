@@ -1,0 +1,20 @@
+The configure script which is included in this release is, pretty much,
+the one which was written for the Hungry project. It works for me but
+I don't have any experience with autoconf or configure.
+Until I learn more (or someone offers to help out on the project :-)) it will
+have to do.
+The test subdirectory uses a plain, simple Makefile.
+
+I have built the libraries on the following -
+Red Hat 6.2 / kernel 2.2.14-12 intel / egcs-2.91.66
+Red Hat 7.0 / kernel 2.2.16-22 intel / gcc 2.96
+Sun Solaris 2.5 sparc / gcc 2.95
+Sun Solaris 8 sparc / gcc 2.95
+
+
+The basic steps are:
+./configure    - creates the Makefile
+make           - just build the libraries
+make install   - build the libraries and install them
+make test      - build and install the libraries, and build the test harness
+

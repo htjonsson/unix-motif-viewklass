@@ -1,0 +1,22 @@
+ViewKlass test harness
+
+This directory contains 3 test programs;
+
+vktest, which contains test code for most of the ViewKlass classes,
+staticMenuTest, which is intended primarily for testing the static
+definition of Menus and resourceTest which provides a test harness
+for VkGetResource function.
+
+There are also 3 resource files, Vktest, StaticMenuTest and
+ResourceTest, which demonstrate many of the ways in which ViewKlass
+uses resources.
+These files should be copied to $HOME so that they are read during
+application startup. Alternatively you can set XAPPLRESDIR to point
+to this test directory.
+
+The Slider class is an example of a component derived from VkComponent.
+
+
+Have Fun,
+
+jostle

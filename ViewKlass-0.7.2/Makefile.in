@@ -1,0 +1,163 @@
+#
+# Makefile for ViewKlass
+#
+# This may or may not work with your make(1) program.
+# If in doubt, or if it doesn't work, get GNU make, as
+# it's better in almost every aspect anyway.
+#
+# Chris Toshok
+# Copyright (C) 1995
+# The Hungry Programmers, Inc.
+# All Rights Reserved
+#
+
+
+.C.o:
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+CXX=@CXX@
+CC=@CC@
+RANLIB=@RANLIB@
+AR=@AR@
+INSTALL=@INSTALL@
+INSTALL_DATA=@INSTALL_DATA@
+
+INCFLAGS=-I. @motif_includes@ -I@x_includes@
+
+### We are still in debugging mode ....
+# CXXFLAGS= $(INCFLAGS) -O @DEFS@
+# CFLAGS= $(INCFLAGS) -O @DEFS@
+CXXFLAGS= $(INCFLAGS) -g -Wall @DEFS@
+CFLAGS= $(INCFLAGS) -g -Wall @DEFS@
+
+# Install directories
+# LIBINSTALLDIR -- Directory to place libvk.a when all is said and done.
+# INFOINSTALLDIR -- Directory to install the info pages.
+# HEADERINSTALLDIR -- Directory to install the header files.
+#
+prefix = /usr/local
+exec_prefix = ${prefix}
+
+LIBINSTALLDIR= $(exec_prefix)/lib
+INFOINSTALLDIR= $(prefix)/info
+HEADERINSTALLDIR= $(prefix)/include
+
+################################################################################
+#
+# You probably should not have to edit anything beyond this point.
+#
+################################################################################
+
+LIBOBJS= VkCallbackObject.o VkCallbackList.o VkComponent.o VkSimpleWindow.o \
+	VkWindow.o VkApp.o VkComponentList.o VkMenuItem.o \
+	VkDialogManager.o VkInfoDialog.o VkWarningDialog.o VkErrorDialog.o \
+	VkFatalErrorDialog.o VkQuestionDialog.o VkPromptDialog.o \
+	VkGenericDialog.o VkFileSelectionDialog.o \
+	VkBusyDialog.o VkInterruptDialog.o VkProgressDialog.o \
+	VkMessageDialog.o \
+	VkSelectionDialog.o VkCursorList.o VkRepeatButton.o \
+	VkCheckBox.o VkRadioBox.o VkGangedGroup.o \
+	VkRadioGroup.o VkWidgetList.o \
+	VkMenu.o VkMenuAction.o VkMenuActionWidget.o \
+	VkMenuConfirmFirstAction.o VkMenuActionObject.o \
+	VkMenuLabel.o VkMenuToggle.o VkPopupMenu.o \
+	VkOptionMenu.o VkMenuBar.o VkMenuSeparator.o VkSubMenu.o  \
+	VkRadioSubMenu.o VkMenuUndoManager.o VkHelpPane.o VkResource.o \
+	builtinbusy.o VkFormat.o VkPeriodic.o \
+	VkPipe.o VkInput.o VkBackground.o VkModel.o \
+	VkAction.o VkNameList.o VkSubProcess.o \
+	VkPrefDialog.o VkPrefOption.o VkPrefText.o \
+	VkPrefToggle.o VkPrefSeparator.o VkPrefCustom.o\
+	VkPrefLabel.o VkPrefEmpty.o \
+	VkPrefGroup.o VkPrefList.o VkPrefRadio.o VkPrefItem.o \
+	VkAlignmentGroup.o VkPixmap.o \
+	VkProgram.o \
+	VkTrace.o VkCompletionField.o
+
+LIBHELPOBJS= VkHelpAPI.o
+
+
+SRCS= $(LIBOBJS:.o=.C)
+
+HDRS= Vk/VkCallbackObject.h Vk/VkCallbackList.h Vk/VkComponent.h \
+	Vk/VkSimpleWindow.h \
+	Vk/VkWindow.h Vk/VkApp.h Vk/VkComponentList.h Vk/VkMenuItem.h \
+	Vk/VkDialogManager.h Vk/VkInfoDialog.h Vk/VkWarningDialog.h \
+	Vk/VkErrorDialog.h \
+	Vk/VkFatalErrorDialog.h Vk/VkQuestionDialog.h Vk/VkPromptDialog.h \
+	Vk/VkGenericDialog.h Vk/VkFileSelectionDialog.h \
+	Vk/VkBusyDialog.h Vk/VkInterruptDialog.h Vk/VkProgressDialog.h \
+	Vk/VkMessageDialog.h \
+	Vk/VkSelectionDialog.h Vk/VkCursorList.h Vk/VkRepeatButton.h \
+	Vk/VkCheckBox.h Vk/VkRadioBox.h Vk/VkGangedGroup.h \
+	Vk/VkRadioGroup.h Vk/VkWidgetList.h \
+	Vk/VkMenu.h Vk/VkMenuAction.h Vk/VkMenuActionWidget.h\
+	Vk/VkMenuConfirmFirstAction.h Vk/VkMenuActionObject.h \
+	Vk/VkMenuLabel.h Vk/VkMenuToggle.h Vk/VkPopupMenu.h \
+	Vk/VkOptionMenu.h Vk/VkMenuBar.h Vk/VkMenuSeparator.h Vk/VkSubMenu.h \
+	Vk/VkRadioSubMenu.h Vk/VkMenuUndoManager.h Vk/VkHelpPane.h \
+	Vk/VkResource.h \
+	Vk/builtinbusy.h Vk/VkFormat.h Vk/VkPeriodic.h \
+	Vk/VkPipe.h Vk/VkInput.h Vk/VkBackground.h Vk/VkModel.h \
+	Vk/VkAction.h Vk/VkNameList.h Vk/VkSubProcess.h\
+	Vk/VkPrefDialog.h Vk/VkPrefOption.h Vk/VkPrefText.h \
+	Vk/VkPrefToggle.h Vk/VkPrefSeparator.h Vk/VkPrefCustom.h \
+	Vk/VkPrefLabel.h Vk/VkPrefEmpty.h \
+	Vk/VkPrefGroup.h Vk/VkPrefList.h Vk/VkPrefRadio.h \
+	Vk/VkPrefItem.h \
+	Vk/VkAlignmentGroup.h Vk/VkPixmap.h \
+	Vk/VkHelpAPI.h \
+	Vk/VkProgram.h \
+	Vk/VkTrace.h Vk/VkCompletionField.h
+
+
+LIB= libvk.a
+LIBSHARED= libvk.sl
+LIBHELP = libvkhelp.a
+LIBHELPSHARED= libvkhelp.sl
+
+#------------------------------------------
+
+all::	$(LIB) $(LIBHELP) 
+
+test:: all
+	cd test; $(MAKE); cd ..;
+
+install:: install-lib install-headers
+
+install-lib:: $(LIB) $(LIBHELP)
+	$(INSTALL_DATA) $(LIB) $(LIBINSTALLDIR)
+	$(INSTALL_DATA) $(LIBHELP) $(LIBINSTALLDIR)
+
+install-headers:: $(HDRS)
+	-mkdir -p $(HEADERINSTALLDIR)/Vk;
+	$(INSTALL_DATA) $(HDRS) Vk/VkConfig.h $(HEADERINSTALLDIR)/Vk
+
+$(LIB)::	$(LIBOBJS) $(COBJS)
+	@-rm $(LIB)
+	$(AR) clrv $(LIB) $(LIBOBJS) $(COBJS)
+	$(RANLIB) $(LIB)
+
+$(LIBHELP)::	$(LIBHELPOBJS)
+	@-rm $(LIBHELP)
+	$(AR) clrv $(LIBHELP) $(LIBHELPOBJS)
+	$(RANLIB) $(LIBHELP)
+
+clean::	
+	-rm -f $(LIB) $(LIBHELP) $(LIBOBJS) $(LIBHELPOBJS) *.bak *~
+	-rm -f Vk/*~
+	cd test; $(MAKE) clean; cd ..
+
+extract-srcs:: $(SRCS) $(HDRS)
+
+clean-srcs::
+	-rm -f $(SRCS) $(HDRS)
+
+depend:: $(SRCS) $(HDRS)
+	makedepend $(INCFLAGS) $(SRCS)
+
+check-in::
+	ci -u $(SRCS) $(HDRS)
+
+check-out::
+	co -l $(SRCS) $(HDRS)

@@ -19,6 +19,7 @@ https://tronche.com/gui/x/xlib/events/processing-overview.html#KeyPressMask <br/
 
 # MOTIF
 https://www.ist.co.uk/motif/books/vol6A/BookTOC.fm.html
+https://users.cs.cf.ac.uk/Dave.Marshall/X_lecture/
 <hr/>
 https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch08.html#9_3_1 <br/>
 https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch07.html#8 <br/>

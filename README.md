@@ -1,3 +1,11 @@
+# DEVELOPMENT ENVIRONMENT
+- apt-get install gcc
+- apt-get install make
+- apt-get install git
+
+# MOTIF DEVELOPMENT ENVIRONMENT
+- apt-get install libmotif-dev
+
 # C++
 https://cplusplus.com/reference/ <br/>
 https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp <br/>

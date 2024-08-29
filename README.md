@@ -1,10 +1,19 @@
 # DEVELOPMENT ENVIRONMENT
 - apt-get install gcc
+- apt-get install g++
 - apt-get install make
 - apt-get install git
 
 # MOTIF DEVELOPMENT ENVIRONMENT
 - apt-get install libmotif-dev
+- apt-get install libxmu-dev
+- apt-get install libxpm-dev
+
+# VIEWKLASS DEVELOPMENT ENVIRONMENT
+- void VkCallbackList::class(VkCallbackObject *caller, void *callData); // Disabled
+- touch libvk.a
+- touch libvkhelp.a
+- $(AR) -r instead of $(AR) clrv // Makefile change
 
 # C++
 https://cplusplus.com/reference/ <br/>

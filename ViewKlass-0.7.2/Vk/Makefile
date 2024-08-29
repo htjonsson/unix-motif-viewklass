@@ -9,7 +9,7 @@ INCDIRS = -I.. -I/usr/X11R6/include
 
 LIBDIRS = -L.. -L/usr/X11R6/lib
 
-LIBS    = -lvk -lvkhelp -lvk -lXpm -lXp -lXmu -lXm -lXt -lX11 -lstdc++
+LIBS    = -lvk -lvkhelp -lvk -lXpm -lXmu -lXm -lXt -lX11 -lstdc++
 
 CC		= gcc -O0 -g
 

@@ -15,6 +15,13 @@
 - touch libvkhelp.a
 - $(AR) -r instead of $(AR) clrv // Makefile change
 
+# X11 FORWARDING
+https://www.businessnewsdaily.com/11035-how-to-use-x11-forwarding.html <br/>
+https://laptops.eng.uci.edu/engineering-software/using-linux/configure-ubuntu-for-x11-forwarding-on-startup <br/>
+https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/ <br/>
+https://www.cyberciti.biz/faq/apple-osx-mountain-lion-mavericks-install-xquartz-server/ <br/>
+https://www.youtube.com/watch?v=FlHVuA_98SA <br/>
+
 # C++
 https://cplusplus.com/reference/ <br/>
 https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp <br/>

@@ -47,6 +47,12 @@ https://users.cs.cf.ac.uk/Dave.Marshall/X_lecture/ <br/>
 https://www.softintegration.com/chhtml/toolkit/demos/X11/motif/ <br/>
 https://www.softintegration.com/chhtml/toolkit/demos/X11/xtmotif/ <br/>
 <hr/>
+https://xopendisplay.hilltopia.ca/2009/Feb/Xlib-tutorial-part-4----Text.html <br/>
+https://github.com/gamedevtech/X11OpenGLWindow/blob/master/X11.cpp <br/>
+https://www.x.org/releases/X11R7.6/doc/libX11/specs/libX11/libX11.html#Loading_and_Freeing_Fonts <br/>
+https://users.cs.cf.ac.uk/Dave.Marshall/X_lecture/node17.html#SECTION001733000000000000000 <br/>
+https://stackoverflow.com/questions/28378891/glxcreatecontext-magically-maps-window <br/>
+<hr/>
 https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch08.html#9_3_1 <br/>
 https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch07.html#8 <br/>
 https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>

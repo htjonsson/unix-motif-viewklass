@@ -22,6 +22,9 @@ https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/ <br/>
 https://www.cyberciti.biz/faq/apple-osx-mountain-lion-mavericks-install-xquartz-server/ <br/>
 https://www.youtube.com/watch?v=FlHVuA_98SA <br/>
 
+# SAMBA
+https://ubuntu.com/tutorials/install-and-configure-samba#4-setting-up-user-accounts-and-connecting-to-share <br/>
+
 # C++
 https://cplusplus.com/reference/ <br/>
 https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/?ref=lbp <br/>

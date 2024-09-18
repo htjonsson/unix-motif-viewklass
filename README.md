@@ -13,7 +13,7 @@
 - void VkCallbackList::class(VkCallbackObject *caller, void *callData); // Disabled
 - touch libvk.a
 - touch libvkhelp.a
-- $(AR) -r instead of $(AR) clrv // Makefile change
+- (AR) - clrv => (AR) - r // Makefile change
 
 # X11 FORWARDING
 https://www.businessnewsdaily.com/11035-how-to-use-x11-forwarding.html <br/>

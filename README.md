@@ -43,6 +43,7 @@ https://gitlab.freedesktop.org/xorg/app/xfontsel/-/blob/master/xfontsel.c?ref_ty
 https://ftp.cs.wisc.edu/math-prog/surgery/interface.c <br/>
 https://www.x.org/releases/current/doc/libX11/libX11/libX11.html <br/>
 https://tronche.com/gui/x/xlib/events/processing-overview.html#KeyPressMask <br/>
+https://handmade.network/forums/articles/t/2834-tutorial_a_tour_through_xlib_and_related_technologies <br/>
 
 # MOTIF
 https://www.ist.co.uk/motif/books/vol6A/BookTOC.fm.html <br/>

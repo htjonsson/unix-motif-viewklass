@@ -89,6 +89,7 @@ https://web.archive.org/web/20160128065726/http://techpubs.sgi.com/library/tpl/c
 https://help.graphica.com.au/irix-6.5.30/man/3X/SgGraph <br/>
 https://help.graphica.com.au/irix-6.5.30/man/3X/SgArc <br/>
 https://techpubs.jurassic.nl/library/manuals/2000/007-2006-130/sgi_html/apa.html#LE74701-PARENT <br/>
+https://archive.irixnet.org/apocrypha/nekonomicon/forum/8/16730318/1.html <br/>
 
 # VIEWKLASS
 https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass <br/>

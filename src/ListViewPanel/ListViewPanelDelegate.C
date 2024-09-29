@@ -2,7 +2,7 @@
 
 #include "EZ.h"
 #include "images/workstation_sgi.xpm"
-// #include "images/workstation_sparc.xpm"
+#include "images/workstation_sparc.xpm"
 
 #include <Vk/VkPixmap.h>
 #include <Xm/Xm.h>
@@ -42,6 +42,8 @@ ListViewPanelDelegate::setNumberOfRows(int numberOfRows)
 int 
 ListViewPanelDelegate::heightOfRow()
 {
+    std::cout << "ListViewPanelDelegate::heightOfRow() " << _heightOfRow << endl; 
+
     return _heightOfRow;;
 }
 
@@ -98,8 +100,7 @@ ListViewPanelDelegate::draw(int rowId, VkGraphics* g, XRectangle rectangle)
     rect = EZ::ofRectangle(rectangle, 6, 15, 48, 48);
     g->drawRectangle(rect, "green");
 
-    // g->getPixmapByName("sgi", std::string(_workstation_sgi));
-    // g->getPixmapByName("sun", std::string(_workstation_sparc));
+    g->getPixmapByName("sun", _workstation_sparc);
 
-    g->draw("sgi", 48, 48, rect.x, rect.y);
+    g->draw("sun", 48, 48, rect.x, rect.y);    
 }

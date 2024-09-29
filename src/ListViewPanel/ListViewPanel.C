@@ -120,11 +120,41 @@ ListViewPanel::setNumberOfRows(int numberOfRows)
 
 // ------------------------------------------------------------------------------------------------------------------------
 //
+//      SELECTED ROW LOGIC
+//
+// ------------------------------------------------------------------------------------------------------------------------
+
+void 
+ListViewPanel::setSelectedRow(int id)
+{
+    if (_numberOfRows > id || id < 0)
+        clearSelectionRow();
+
+    _selectedRow = id;
+}
+    
+int 
+ListViewPanel::selectedRow()
+{
+    return _selectedRow;
+}
+    
+void 
+ListViewPanel::clearSelectionRow()
+{
+    _selectedRow = -1;
+}
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------
+//
 //      DRAWING LOGIC
 //
 // ------------------------------------------------------------------------------------------------------------------------
 
-void ListViewPanel::setRowsVisible(Dimension height)
+void 
+ListViewPanel::setRowsVisible(Dimension height)
 {
     if (height > 0)
     {
@@ -133,52 +163,7 @@ void ListViewPanel::setRowsVisible(Dimension height)
     }
 
     float rows = (float)height / (float)_rowHeight;
-    _numberOfRowsVisible = (int)rows + 1;
-}
-
-Pixmap
-ListViewPanel::createPixmap(Dimension width, Dimension height)
-{
-    Pixmap pixmap;
-    Display* display = XtDisplay(_baseWidget);
-
-    if (!(pixmap = XCreatePixmap(display, DefaultRootWindow(display), width, height, DefaultDepthOfScreen(XtScreen(_drawingArea)))))
-    {
-        XtError("Can't Create pixmap.");
-        return NULL;
-    }
-
-    return pixmap;
-}
-
-GC 
-ListViewPanel::createGraphicsContextByPixmap(Pixmap pixmap)
-{
-    GC gc;
-    Display* display = XtDisplay(_baseWidget);
-
-    if (!(gc = XCreateGC(display, pixmap, NULL, 0)))
-    {
-        XtError("Can't create gc.");
-        return NULL;
-    }
-
-    return gc;
-}
-
-GC 
-ListViewPanel::createGraphicsContextByWindow(Window window)
-{
-    GC gc;
-    Display* display = XtDisplay(_baseWidget);
-
-    if (!(gc = XCreateGC(display, window, NULL, 0)))
-    {
-        XtError("Can't create gc.");
-        return NULL;
-    }
-
-    return gc;
+    _numberOfRowsVisible = (int)rows; //  + 1;
 }
 
 void 
@@ -197,39 +182,71 @@ ListViewPanel::redraw(Window window)
     if (_delegate == NULL)
     {
         XtError("Delegator not found");
+        return;
     }
 
-    if (_delegate != NULL)
+    int separator = 1;
+    int hightOfRow = _delegate->heightOfRow();
+
+    // std::cout << "[numberOfRows] " << _numberOfRows << std::endl;
+    // std::cout << "[offsetRows] " << _offsetRows << std::endl;
+
+    for (int i = 0; i < _numberOfRowsVisible; i++)
     {
-        int separator = 1;
-        int hightOfRow = _delegate->heightOfRow();
+        int rowId = i + (_offsetRows); 
 
-        std::cout << "[numberOfRows] " << _numberOfRows << std::endl;
-        std::cout << "[offsetRows] " << _offsetRows << std::endl;
+        if (this->_numberOfRows > rowId)
+        {   
+            int offset = (hightOfRow + separator) * i;
 
-        for (int i = 0; i < _numberOfRowsVisible; i++)
-        {
-            int rowId = i + (_offsetRows); 
+            if (_numberOfRows > 1)
+            {
+                // Draw separator line
+                graphics.drawHorizontalLine(6, _rowWidth-6, offset+hightOfRow, "gray94");
+            }
 
-            if (this->_numberOfRows > rowId)
-            {   
-                int offset = (hightOfRow + separator) * i;
+            if (rowId == selectedRow())
+            {
+                XRectangle selectedRowReact = EZ::makeRectangle(6, offset, windowReact.width-12, hightOfRow-separator);
+                graphics.fillRectangle(selectedRowReact, "gray98");
+            }
 
-                if (_numberOfRows > 1)
-                {
-                    // Draw separator line
-                    graphics.drawHorizontalLine(6, _rowWidth-6, offset+hightOfRow, "gray94");
-                }
-
-                XRectangle rectangle = EZ::makeRectangle(6, offset, _rowWidth-12, hightOfRow-separator);
-                _delegate->draw(rowId, &graphics, rectangle);
-            }     
-        }
-
-        // Fix the slide size 
-        // int slideSize = (_numberOfRows/_numberOfRowsVisible);
-        // XtVaSetValues(_verticalScrollbar, XmNsliderSize, slideSize, NULL);
+            XRectangle rectangle = EZ::makeRectangle(6, offset, _rowWidth-12, hightOfRow-separator);
+            _delegate->draw(rowId, &graphics, rectangle);
+        }     
     }
+
+    // Fix the slide size 
+    // int slideSize = (_numberOfRows/_numberOfRowsVisible);
+    // XtVaSetValues(_verticalScrollbar, XmNsliderSize, slideSize, NULL);
+}
+
+int
+ListViewPanel::getRowIdByY(int y)
+{
+    if (_delegate == NULL)
+        return -1;
+
+    int separator = 1;
+    int hightOfRow = _delegate->heightOfRow();
+
+    for (int i = 0; i < _numberOfRowsVisible; i++)
+    {
+        int rowId = i + (_offsetRows); 
+
+        if (this->_numberOfRows > rowId)
+        {   
+            int offset = (hightOfRow + separator) * i;
+
+            if (y >= offset && y <= offset+hightOfRow)
+            {
+                return rowId;
+            }
+                
+        }
+    }
+
+    return -1;
 }
 
 // ------------------------------------------------------------------------------------------------------------------------
@@ -263,8 +280,8 @@ void ListViewPanel::handleResize(Window window)
 
     _rowWidth = width;
 
-    std::cout << "XmNwidth " << width << std::endl;
-    std::cout << "XmNheight " << height << std::endl;
+    // std::cout << "XmNwidth " << width << std::endl;
+    // std::cout << "XmNheight " << height << std::endl;
 
     if (_delegate != NULL)
     {
@@ -303,15 +320,26 @@ void ListViewPanel::handleEvent(XEvent* event)
     }
 }
 
+void ListViewPanel::handleButton1Pressed(XButtonPressedEvent* event)
+{
+    cout << "handleButton1Pressed" << " y: " << event->y << endl;    
+
+    int rowId = getRowIdByY(event->y);
+
+    setSelectedRow(rowId);
+
+    redraw(XtWindow(_drawingArea));
+}
+
 void ListViewPanel::handleButtonPressed(XButtonPressedEvent* event)
 {
-    cout << "handleButtonPressed" << endl;
-    cout << "x: " << event->x << " y: " << event->y << endl;
+    // cout << "handleButtonPressed" << endl;
+    // cout << "x: " << event->x << " y: " << event->y << endl;
 
     // https://tronche.com/gui/x/xlib/events/keyboard-pointer/keyboard-pointer.html
     switch(event->button)
     {
-        case Button1: cout << "Button1" << endl; break;
+        case Button1: /*cout << "Button1" << endl;*/ handleButton1Pressed(event); break;
         case Button2: cout << "Button2" << endl; break;
         case Button3: cout << "Button3" << endl; break;
         case Button4: cout << "Button4" << endl; break;

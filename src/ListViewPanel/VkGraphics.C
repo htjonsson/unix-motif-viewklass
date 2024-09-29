@@ -405,17 +405,25 @@ VkGraphics::setBackgroundColor(std::string colorName)
 // ---------------------------------------------------------------------------------------
 
 Pixmap 
-VkGraphics::getPixmapByName(std::string pixmapName, std::string pixmapData)
+VkGraphics::getPixmapByName(std::string pixmapName, const char** xpmPixmapDesc)
 {
     if (_pixmapMap.count(pixmapName) == 0)
     {
-        Pixmap pixmap = VkCreateXPMPixmap(_widget, pixmapData.c_str(), NULL);
+        std::cout << "Name not found" << std::endl;
+
+        Pixmap pixmap = VkCreateXPMPixmap(_widget, xpmPixmapDesc, NULL);
+
+        if (pixmap == 0)
+            return 0;
 
         _pixmapMap.insert(std::pair<std::string, Pixmap>(pixmapName, pixmap)); 
 
+        std::cout << "pixmap " << pixmap  << std::endl;
+
         return pixmap;
     }
-    
+    std::cout << "Name found" << std::endl;
+
     return _pixmapMap.at(pixmapName);
 }
 

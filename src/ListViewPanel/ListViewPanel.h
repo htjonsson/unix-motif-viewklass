@@ -41,15 +41,8 @@ public:
     void setNumberOfRows(int numberOfRows);
     int numnberOfRows();
 
+public:
     void setHeightOfRow(int heightOfRow);
-
-private:
-    // Pixmap _pixmap = NULL;
-    Pixmap createPixmap(Dimension width, Dimension height);
-
-private:    
-    GC createGraphicsContextByPixmap(Pixmap pixmap);
-    GC createGraphicsContextByWindow(Window window);
 
 private:
     void setupUserInterface(Widget w);
@@ -59,6 +52,15 @@ private:
 
 public:
     void setRowsVisible(Dimension height);
+    int getRowIdByY(int y);
+
+private:
+    int _selectedRow = -1;
+
+public:
+    void setSelectedRow(int id);
+    int selectedRow();
+    void clearSelectionRow();
 
 private:
     void handleScrolled(int orientation, int value);
@@ -66,6 +68,7 @@ private:
     void handleResize(Window window);   
     void handleEvent(XEvent* event);  
     void handleButtonPressed(XButtonPressedEvent* event);
+    void handleButton1Pressed(XButtonPressedEvent* event);
 
 private:
     static void inputCallback(Widget widget, XtPointer clientData, XtPointer callData);

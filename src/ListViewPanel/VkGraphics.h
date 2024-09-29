@@ -95,7 +95,7 @@ private:
      std::map<std::string, Pixmap> _pixmapMap;
 
 public:
-     Pixmap getPixmapByName(std::string pixmapName, std::string pixmapData);
+     Pixmap getPixmapByName(std::string pixmapName, const char** xpmPixmapDesc);
      Pixmap getPixmap(std::string pixmapName);
      void setPixmap(std::string pixmapName, Pixmap pixmap);
 

@@ -411,7 +411,7 @@ VkTabPanel::draw(int width)
         XmNbackground, &_tabBg,
         NULL);
 
-    cout << "draw() width = " << width << endl; 
+    // cout << "draw() width = " << width << endl; 
 
     for(size_t i = 0; i < _items.size(); i++)
     {

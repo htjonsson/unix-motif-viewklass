@@ -90,6 +90,7 @@ https://help.graphica.com.au/irix-6.5.30/man/3X/SgGraph <br/>
 https://help.graphica.com.au/irix-6.5.30/man/3X/SgArc <br/>
 https://techpubs.jurassic.nl/library/manuals/2000/007-2006-130/sgi_html/apa.html#LE74701-PARENT <br/>
 https://archive.irixnet.org/apocrypha/nekonomicon/forum/8/16730318/1.html <br/>
+https://bartkuik.nl/SGI/IRIX/i/65/19/doc/usr/share/Insight/library/SGI_bookshelves/SGI_Admin/books/XVM_AG/sgi_html/ch05.html <br/>
 
 # VIEWKLASS
 https://docs.maxxinteractive.com/books/maxxdesktop-frameworks/page/maxxviewklass <br/>
@@ -117,5 +118,11 @@ http://www.edm2.com/index.php/File:Ibm-icsvb.png <br/>
 # Visual Tcl
 https://vtcl.sourceforge.net/?x=screen <br/>
 
+# HP-UX
+https://docstore.mik.ua/manuals/hp-ux/en/5992-5309/ch10s04.html
+
 # Java
-http://www.geocities.ws/james_smith73/swing1.html
+http://www.geocities.ws/james_smith73/swing1.html <br/>
+https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/uiswing/examples/components/JWSFileChooserDemoProject/src/components/JWSFileChooserDemo.java <br/>
+https://www.cs.fsu.edu/~jtbauer/cis3931/tutorial/trailmap.html <br/>
+https://www.cs.cmu.edu/afs/cs/academic/class/15212-s98/www/java/tutorial/ui/components/dialog.html <br/>

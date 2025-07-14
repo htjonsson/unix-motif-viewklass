@@ -10,7 +10,7 @@
 - apt-get install libxpm-dev
 
 # VIEWKLASS DEVELOPMENT ENVIRONMENT
-- void VkCallbackList::class(VkCallbackObject *caller, void *callData); // Disabled
+- void VkCallbackList::call(VkCallbackObject *caller, void *callData); // Disabled
 - touch libvk.a
 - touch libvkhelp.a
 - (AR) - clrv => (AR) - r // Makefile change

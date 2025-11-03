@@ -125,6 +125,7 @@ https://vtcl.sourceforge.net/?x=screen <br/>
 https://docstore.mik.ua/manuals/hp-ux/en/5992-5309/ch10s04.html
 
 # Java
+https://www.baeldung.com/spring-boot-react-crud <br/>
 http://www.geocities.ws/james_smith73/swing1.html <br/>
 https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/uiswing/examples/components/JWSFileChooserDemoProject/src/components/JWSFileChooserDemo.java <br/>
 https://www.cs.fsu.edu/~jtbauer/cis3931/tutorial/trailmap.html <br/>

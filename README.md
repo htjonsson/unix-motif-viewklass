@@ -83,6 +83,8 @@ https://easymotif.sourceforge.net/EasyMotif.html <br/>
 http://www.motifdeveloper.com/tips/tip2.html#xtocid114825 <br/>
 
 # SGI
+https://help.graphica.com.au/irix-6.5.30/man/3X/SgDropPocket <br/>
+https://techpubs.jurassic.nl/manpages_0530/cat3/Sgm/SgFinder.html <br/>
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/ch14.html#id13837 <br/>
 http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/index.html <br/>
 https://web.archive.org/web/20160128065726/http://techpubs.sgi.com/library/tpl/cgi-bin/getdoc.cgi/0530/bks/SGI_Developer/books/BuilderUG/sgi_html/ch07.html#id32362 <br/>

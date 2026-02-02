@@ -34,6 +34,7 @@ https://github.com/nlohmann/json?tab=readme-ov-file#read-json-from-a-file <br/>
 https://app.quicktype.io/ <br/>
 
 # X11
+https://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/XLib_WinSys/sgi_html/index.html <br/>
 https://www.keithp.com/~keithp/render/Xft.tutorial <br/> 
 https://user.it.uu.se/~bonordin/Graphics/MotifWidgetReference.html <br/>
 https://stackoverflow.com/questions/30407836/x11-how-do-i-get-the-font-i-want <br/>
